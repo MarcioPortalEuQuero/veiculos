@@ -21,7 +21,7 @@ return $formated;
 }
 function show_veiculos() {
 $veiculos = get_json_veiculos();
-echo '<!--<input type="text" class="search_widget_input" name="search-car" id="search-car" placeholder="Pesquisar por um veículo digitanto modelo, marca ou valor."> -->
+echo '<div style="padding:30px 0px 0px 63px"><span style="color:#6f7380;font-size:14px;text-transform:uppercase;margin-left: 16px;">Patrocinado</span></div>
 <div class="car-datails">
 <div id="car-active" data-id=""></div>
 ';
@@ -37,6 +37,9 @@ echo '
 </div>';
 echo '<div class="view-car" style="display:none;" id="car-full-desc-'.$value->Id.'">
 <div class="close-bt" data-id="'.$value->Id.'">X</div>
+<div style="float: right;right: 1%;padding: 10px 20px;z-index: 9999;position: absolute;top: 0px;font-size: 26px;">
+<img src="/imagens/logopeqapp.png" height="50" width="50">
+</div>
 <div class="full-pic" data-id="'.$value->Id.'" data-current="0" id="'.$value->Id.'">
 <div class="prev-next">
 <div class="prev" data-id="'.$value->Id.'"><</div>

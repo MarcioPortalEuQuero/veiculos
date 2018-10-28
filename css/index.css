@@ -54,7 +54,7 @@
 
 	padding: 12px;
 
-	width: 100%;
+	width: auto;
 
 	float:left;
 
@@ -186,8 +186,6 @@ border-radius: 50%;
 }
 
 .prev{
-
-	
 background-color: #4dc247;
 line-height: 50px;
 text-align: center;
@@ -207,7 +205,6 @@ opacity: 0.8;
 margin-right: 5px;
 border-radius: 100px;
 padding: 0px;
-float: right;
 display: inline;
 z-index: 9999;
 width: 50px;
@@ -215,16 +212,12 @@ font-size: 35px;
 color: #FFF;
 cursor: pointer;
 float: left;
-display: inline;
 z-index: 9999;
 font-weight: bold;
-color: #FFF;
-cursor: pointer;
 }
 
 .next{
-
-	background-color: #4dc247;
+background-color: #4dc247;
 line-height: 50px;
 text-align: center;
 min-height: 27px;
@@ -236,7 +229,6 @@ align-items: center;
 -webkit-box-pack: center;
 justify-content: center;
 bottom: 0;
-float: right;
 top: 5px;
 position: relative;
 min-width: 35px;
@@ -272,6 +264,16 @@ font-weight: bold;
 /* Media query*/
 
 @media (max-width: 950px) {
+
+.car-datails {
+    padding: 12px;
+    width: auto;
+    float: left;
+    margin-left: 15px;
+}
+
+
+
 
 	.view-car {
 
