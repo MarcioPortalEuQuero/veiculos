@@ -23,8 +23,8 @@ function show_veiculos() {
 $veiculos = get_json_veiculos();
 echo '<div style="padding:30px 0px 0px 63px"><span style="color:#6f7380;font-size:14px;text-transform:uppercase;margin-left: 16px;">Patrocinado</span></div>
 <div class="car-datails">
-<div id="car-active" data-id=""></div>
-';
+<!--importante -->
+<div id="car-active" data-id=""></div>';
 foreach ($veiculos as $key => $value) {
 echo '
 <div class="car-descript" id="car-desc-'.$value->Id.'">
@@ -52,17 +52,20 @@ echo '<img class="car-pics car-pics-'.$value->Id.'" src="'.$img.'" style="displa
 echo '<img class="car-pics car-pics-'.$value->Id.'" src="'.$img.'">';
 }
 }
-echo '
-</div>
+echo '</div>
 <div class="full-desc">
 <div class="title">'.$value->Loja.'</div>
-<div class="title"><a href="http://www.marioveiculos.com.br" target="_blank">Visitar o Site</a></div>
+<div class="title">
+<a href="http://www.marioveiculos.com.br" target="_blank">Visitar o Site</a>
+</div>
+<div style="padding:5px;background-color:#eee;">
 <div>'.if_has($value->Marca, '<b>Marca:</b> ' . $value->Marca).'</div>
 <div>'.if_has($value->Modelo, '<b>Modelo:</b> ' . $value->Modelo).'</div>
 <div>'.if_has($value->Versao, '<b>Versao:</b> ' . $value->Versao).'</div>
 <div>'.if_has($value->Opcionais, '<b>Opcionais:</b> ' . $value->Opcionais).'</div>
 <div><b>Preço:</b> R$ '.number_format($value->Preco, 2, ',', '.').'</div>
 </div>
+</div><!--//full-desc -->
 </div>
 ';
 }
