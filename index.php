@@ -12,7 +12,7 @@ Version: 0.1
 Author URI: https://www.portaleuquero.com.br/mensagensparticulares/
 */
 function get_json_veiculos() {
-$veiculos = file_get_contents('https://portaleuquero.com.br/json.php');
+$veiculos = file_get_contents('https://portaleuquero.com.br/');
 return json_decode($veiculos);
 }
 function if_has($value, $formated){
