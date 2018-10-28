@@ -5,11 +5,11 @@
 */
 /*
 Plugin Name: Veículos
-Plugin URI: https://maickon.github.io/projetos/veiculos
+Plugin URI: https://www.portaleuquero.com.br/mensagensparticulares/
 Description: O Veículos é um projeto que lista via interface amigável diversos veículos para anuncios de venda. 
-Author: Maickon Rangel
+Author: Márcio Antônios
 Version: 0.1
-Author URI: https://maickon.cf/
+Author URI: https://www.portaleuquero.com.br/mensagensparticulares/
 */
 function get_json_veiculos() {
 $veiculos = file_get_contents('https://portaleuquero.com.br/json.php');
